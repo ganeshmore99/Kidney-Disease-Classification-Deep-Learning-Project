@@ -35,7 +35,6 @@ conda create -n cnncls python=3.8 -y
 conda activate cnncls
 ```
 
-
 ### STEP 02- install the requirements
 ```bash
 pip install -r requirements.txt
@@ -50,11 +49,6 @@ Now,
 ```bash
 open up you local host and port
 ```
-
-
-
-
-
 
 ## MLflow
 
@@ -84,7 +78,6 @@ export MLFLOW_TRACKING_USERNAME=ganeshmore99
 export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
 
 ```
-
 
 ### DVC cmd
 
