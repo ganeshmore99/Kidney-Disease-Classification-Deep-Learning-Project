@@ -29,11 +29,9 @@ Set up the GitHub repository to manage and version control all project files and
 
 ## Project Template Creation
 ### Create a standard project template with the following structure:
-
-css
-Copy code
+```
 project_root/
-├── data/
+├── data/<br />
 ├── notebooks/
 ├── src/
 │   ├── components/
@@ -47,6 +45,7 @@ project_root/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
 Project Setup and Requirements Installation
 Set up the project environment and install all necessary dependencies using requirements.txt.
 
