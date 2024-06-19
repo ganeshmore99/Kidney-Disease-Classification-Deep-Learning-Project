@@ -1,6 +1,9 @@
 # End-to-End Kidney Disease Classification Deep Learning Project
 Welcome to the repository for the End-to-End Kidney Disease Classification Deep Learning Project. This project demonstrates the implementation of a comprehensive machine learning pipeline for kidney disease classification, including model training, evaluation, and deployment using MLOps tools such as MLflow and DVC.
 
+![kidney](https://github.com/ganeshmore99/Kidney-Disease-Classification-Deep-Learning-Project/assets/85934803/227e27d6-c0de-41e8-9643-8776a642d954)
+
+
 ## Table of Contents
 #### Introduction
 #### GitHub Repository Setup
@@ -46,45 +49,46 @@ project_root/
 ├── README.md
 └── requirements.txt
 ```
-Project Setup and Requirements Installation
+## Project Setup and Requirements Installation
 Set up the project environment and install all necessary dependencies using requirements.txt.
 
-bash
-Copy code
+```
 pip install -r requirements.txt
-Logging, Utils, and Exceptions Modules
+```
+
+## Logging, Utils, and Exceptions Modules
 Create modules for logging, utilities, and custom exceptions to streamline the development process and enhance debugging.
 
-Logging: Set up logging configurations for tracking the progress and issues.
-Utils: Implement utility functions used across the project.
-Exceptions: Define custom exception classes for better error handling.
-Project Workflows
+#### Logging: Set up logging configurations for tracking the progress and issues.
+#### Utils: Implement utility functions used across the project.
+#### Exceptions: Define custom exception classes for better error handling.
+
+## Project Workflows
 Define and document the workflows for data preprocessing, model training, evaluation, and deployment. Ensure each workflow is modular and reusable.
 
-Notebook Experimentation
+## Notebook Experimentation
 Conduct initial experimentation and prototyping using Jupyter notebooks to validate the feasibility of the approach and fine-tune hyperparameters.
 
-Modular Code Implementation
+## Modular Code Implementation
 Refactor the notebook code into modular components to improve code readability, reusability, and maintainability.
 
-Training Pipeline
+## Training Pipeline
 Develop the training pipeline, including data ingestion, preprocessing, model training, evaluation, and saving models.
 
-MLOps Tools Implementation
+## MLOps Tools Implementation
 Use MLflow for experiment tracking, model versioning, and registration.
 
-MLflow: Track experiments, log metrics, and manage model versions.
-DVC for Pipeline Tracking
+#### MLflow: Track experiments, log metrics, and manage model versions.
+
+## DVC for Pipeline Tracking
 Integrate DVC to manage and track the data pipeline, ensuring reproducibility and version control of datasets and models.
 
-Prediction Pipeline and User App Creation
+## Prediction Pipeline and User App Creation
 Create a prediction pipeline to process new data and generate predictions. Develop a user-friendly application interface for end-users to interact with the model.
 
-Docker
+## Docker
 Containerize the application using Docker to ensure consistency across different environments.
-
-dockerfile
-Copy code
+```
 # Sample Dockerfile
 FROM python:3.8-slim
 
@@ -95,26 +99,13 @@ COPY . .
 RUN pip install -r requirements.txt
 
 CMD ["python", "src/app.py"]
-GitHub Actions
+```
+
+## GitHub Actions
 Set up GitHub Actions for continuous integration and continuous delivery (CI/CD) to automate testing, building, and deployment processes.
 
-Final CI/CD Deployment on AWS Cloud
+## Final CI/CD Deployment on AWS Cloud
 Deploy the final application on AWS using CI/CD pipelines to ensure scalability and reliability.
-
-Conclusion
-This project showcases a comprehensive approach to developing and deploying a deep learning model for kidney disease classification. By integrating MLOps tools like MLflow and DVC, we ensure that the model development process is reproducible, scalable, and maintainable. The final deployment on AWS demonstrates the project's readiness for production use.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Acknowledgments
-Special thanks to the contributors and collaborators who supported the development of this project.
-Gratitude to the open-source community for providing the tools and resources that made this project possible.
-Thanks to the authors of the datasets used in this project.
-
-
-
-
 
 ## Workflows
 
@@ -130,7 +121,7 @@ Thanks to the authors of the datasets used in this project.
 10. app.py
 
 
-# How to run?
+## How to run?
 ### STEPS:
 
 Clone the repository
@@ -288,5 +279,16 @@ DVC
     AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
 
     ECR_REPOSITORY_NAME = simple-app
+
+
+## Conclusion
+This project showcases a comprehensive approach to developing and deploying a deep learning model for kidney disease classification. By integrating MLOps tools like MLflow and DVC, we ensure that the model development process is reproducible, scalable, and maintainable. The final deployment on AWS demonstrates the project's readiness for production use.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+Gratitude to the open-source community for providing the tools and resources that made this project possible.
+Thanks to the authors of the datasets used in this project.
 
 
